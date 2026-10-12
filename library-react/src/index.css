@@ -1,0 +1,265 @@
+/* ---------- Basics ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: lavender;
+  color: #2b2033;
+}
+
+h2 {
+  color: indigo;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 40px 20px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: mediumpurple;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.navbar nav a:hover {
+  background-color: darkviolet;
+}
+
+.navbar nav a.active {
+  background-color: indigo;
+}
+
+.user-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  margin-right: 8px;
+  margin-bottom: 4px;
+  padding: 8px 14px;
+  background-color: mediumpurple;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkviolet;
+}
+
+button.secondary {
+  background-color: gray;
+}
+
+button.danger {
+  background-color: #a1224f;
+}
+
+button.danger:hover {
+  background-color: #7a1a3b;
+}
+
+.user-box button {
+  margin: 0;
+  background-color: indigo;
+}
+
+/* ---------- Forms ---------- */
+.form-box {
+  max-width: 340px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0 25px 0;
+}
+
+.form-box h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 7px 8px;
+  margin-top: 4px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input.input-error {
+  border-color: #a1224f;
+}
+
+.radio-group {
+  margin-bottom: 12px;
+}
+
+.radio-label input {
+  width: auto;
+  margin-right: 6px;
+}
+
+.error {
+  display: block;
+  color: #a1224f;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+}
+
+.hint,
+.empty {
+  color: #5b4a6e;
+  font-size: 14px;
+}
+
+/* ---------- Tables ---------- */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #333;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: mediumpurple;
+  color: white;
+  border: 1px solid white;
+}
+
+tr.low-stock td {
+  background-color: #f8d7e3;
+  color: #a1224f;
+  font-weight: bold;
+}
+
+/* ---------- Dashboard ---------- */
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0 20px 0;
+}
+
+.summary-box {
+  background-color: white;
+  border-radius: 6px;
+  padding: 12px 20px;
+  min-width: 110px;
+}
+
+.summary-box strong {
+  display: block;
+  font-size: 26px;
+  color: indigo;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px;
+  border-top: 5px solid mediumpurple;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  color: indigo;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.card .copies {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card.low-stock {
+  background-color: #f8d7e3;
+  border-top-color: #a1224f;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #a1224f;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 12px 30px 12px;
+  }
+
+  .form-box {
+    max-width: 100%;
+  }
+
+  .user-box {
+    margin-left: 0;
+  }
+}
